@@ -2190,14 +2190,14 @@ highlights.generate_syntax = function(palette, options)
 
   -- Terminal colours
   local terminal = {
-    black = palette.fg,
+    black = palette.bg3,
     red = palette.red,
     yellow = palette.yellow,
     green = palette.green,
     cyan = palette.aqua,
     blue = palette.blue,
     purple = palette.purple,
-    white = palette.bg3,
+    white = palette.fg,
   }
 
   -- Consider adding configuration options for this
