@@ -2190,21 +2190,15 @@ highlights.generate_syntax = function(palette, options)
 
   -- Terminal colours
   local terminal = {
+    black = palette.fg,
     red = palette.red,
     yellow = palette.yellow,
     green = palette.green,
     cyan = palette.aqua,
     blue = palette.blue,
     purple = palette.purple,
+    white = palette.bg3,
   }
-
-  if vim.o.background == "dark" then
-    terminal.black = palette.fg
-    terminal.white = palette.bg3
-  else
-    terminal.black = palette.bg3
-    terminal.white = palette.fg
-  end
 
   -- Consider adding configuration options for this
   vim.g.terminal_color_0 = terminal.black
